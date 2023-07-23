@@ -9,10 +9,6 @@ const employeeSchema = mongoose.Schema({
         type:String,
         required:[true, 'designation is required']
     },
-    department:{
-        type:String,
-        required:[true, 'department is required']
-    },
     salary:{
         type:String,
         required:[true, 'salary is required']
@@ -25,26 +21,6 @@ const employeeSchema = mongoose.Schema({
         type:String,
         required:[true, 'phone is required']
     },
-    ecName:{
-        type:String,
-        required:[true, 'ecName is required']
-    },
-    ecRelationship:{
-        type:String,
-        required:[true, 'ecRelationship is required']
-    },
-    ecTelephone:{
-        type:String,
-        required:[true, 'ecTelephone is required']
-    },
-    ecMobile:{
-        type:String,
-        required:[true, 'ecMobile is required']
-    },
-    addedAt:{
-        type:Date,
-        default: new Date()
-    }
 })
 
 const employeeModel = mongoose.model('EmployeeList',employeeSchema);
